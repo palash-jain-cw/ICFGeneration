@@ -1,0 +1,22 @@
+[project]
+name = "icfgeneration"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Palash Jain", email = "palash.jain.cw@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "ipykernel>=6.30.0",
+    "loguru>=0.7.3",
+    "python-dotenv>=1.1.1",
+    "ruff>=0.12.5",
+]
+
+[project.scripts]
+icfgeneration = "icfgeneration:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
